@@ -39,9 +39,6 @@ import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 import { onMounted } from "vue";
 
-let currentTime = "9:41";
-
-const getCurrentTime = () => {
   const date = new Date();
   return `${date.getHours()}:${date.getMinutes()}`;
 };
