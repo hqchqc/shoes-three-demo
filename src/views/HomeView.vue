@@ -15,7 +15,7 @@
       <!-- <div class="bg-white">
         <canvas id="three" class="w-full mt-10"></canvas>
       </div> -->
-      <canvas id="three" class="w-full mt-10"></canvas>
+      <canvas id="three" class="w-full"></canvas>
     </section>
   </div>
 </template>
@@ -47,12 +47,11 @@ const getCurrentTime = () => {
 const initThree = () => {
   console.log("1", 1);
   const scene = new Scene();
-  // scene.background = new Color("0x000000");
   const canvas = document.querySelector("#three") as HTMLCanvasElement;
   const renderer = new WebGLRenderer({ canvas, antialias: true });
   renderer.setClearColor(0xeeeeee, 0.0);
   const camera = new PerspectiveCamera(
-    105,
+    65,
     window.innerWidth / window.innerHeight,
     0.1,
     1000
